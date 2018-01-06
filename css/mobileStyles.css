@@ -1,0 +1,285 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~general tags~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+html {
+  font-size: 14px;
+}
+
+body { 
+  font-family: "Comic Sans MS", Calibri, sans-serif;
+  line-height: 1.5em;
+  background-color: #442868;
+  color: white; 
+  /*min-width : 400px;*/
+}
+
+h1, h2 {
+  color: purple; 
+}
+
+h1 {  
+  font-size: 1.25em;
+}
+
+
+  
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~wrapper~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#wrapper {
+  background-color: white;
+  width: auto;
+  margin: 0px auto;
+  border: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+header {
+  padding: 2px 10% 2px 10%;	
+  background-color : #aedbf0;
+}
+
+header h1 {
+  font-family: "Comic Sans MS", Arial,Papyrus, serif;
+  font-size: 2.0em;    /* for font-size, em is relative to parent */
+  line-height: 1.2em;  /* for other properties, em is relative to current */
+                     /*   element's font size */	
+  padding: 10px 0 10px 0;
+  color : yellow;
+  text-shadow: 2px 2px 4px #FF0000;
+}
+
+header img {
+	
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+nav {
+  padding: 15px 10% 15px 10%;	
+  background-color: #39c5e3;
+  color: white;
+  font-size: 1.0em;
+  line-height: 1.33em;
+}
+
+nav ul {  
+
+ list-style : none;
+  
+  
+}
+
+/* min 750 */
+
+
+nav ul li {
+  display: block;
+  padding-bottom: 15px;
+  color : white;
+}
+
+nav a {
+  text-decoration: none;
+  outline: none;
+}
+
+nav a.button {
+	background: #39c5e3;
+    border-radius: 40px;
+    padding: 2px 10px;
+    border: 4px solid #2a99b0;
+    color: white;
+    
+    font-size: 1em;
+    line-height: normal;
+}
+
+nav a:link { color: white; }
+
+nav a:visited { color: white; }
+
+nav a:hover { 
+	background : #ffd400;
+	border: 4px solid #ffd400;
+	
+    border-radius: 40px;
+    padding: 2px 10px;
+    border: 4px solid #2a99b0;
+    color: white;
+    
+    font-size: 1em;
+    line-height: normal;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~main content~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+main {
+  padding: 0.5em 10% 0.5em 10%;
+  display : flex;
+  flex-direction: column;
+  background-color: #442868;
+}
+
+main p {
+	color : white;
+
+}
+
+main .box {
+	/*margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 10px;
+	border: 1px solid grey;
+	border-radius: 10px;*/
+	margin: 0.5em 0 0.5em 0;
+	padding: 1em 5% 3em 10px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	text-align: justify;
+}
+
+main figure {
+  /*overflow: hidden;*/
+  width: 30%;
+  float: left;
+  margin: 0.5em 20px 0.5em 15px;
+  border: none;
+}
+
+main figcaption {
+  text-align: center; /*left or center?????*/
+  color : red; 
+}
+
+main figure img {
+  
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+  
+}
+
+
+main #puzzle_canvas {
+	
+	border-style : solid;
+	border-width : 2px;
+	border-radius: 20px;
+	
+	
+}
+main #map {
+	
+	padding-top : 0.5em;
+	
+	
+}
+/*
+.socialmedia {
+	display : flex;
+	flex-direction : column;
+	size : 30%;
+	
+	
+}
+
+main .socialmedia:hover {
+	
+	/*box-shadow : 4px 4px 2px blue;
+	
+	
+}
+*/
+
+
+main h1 {
+	color : yellow;
+	color : yellow;
+	padding : 0.8em 0 0.8em 0;
+}
+
+main span {
+	color : red;
+}
+
+main aside {
+    
+	padding-top: 5%;
+	
+}
+
+main article {
+margin: 20px 0;
+border-top: 1px solid rgb(200,200,200);
+}
+
+main article p {
+	border : none;
+}
+
+main .button {
+	background: #39c5e3;
+    border-radius: 40px;
+    padding: 2px 10px;
+    border: 4px solid #2a99b0;
+    color: white;
+	margin-top : 0.5em;
+   
+    font-size: 1em;
+    line-height: normal;
+}
+
+main input.button:hover { 
+	
+	background : #ffd400;
+	border: 4px solid #ffd400;
+	
+    border-radius: 40px;
+    padding: 2px 10px;
+    border: 4px solid #2a99b0;
+    color: white;
+    
+    font-size: 1em;
+    line-height: normal;
+	
+	
+}
+
+main .text {
+	background-color : #aedbf0;
+	width : 95%;
+}
+
+main a {
+	color : white;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~footer~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+ 
+  clear: both;
+  text-align: center;
+  font-size: 0.85em;
+  border-top: 1px solid gray;
+  padding: 3px 10%;
+  background-color : #5fb74e;
+}
+
+footer a {
+	color : yellow ;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ~~~end~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

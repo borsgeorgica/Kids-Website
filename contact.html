@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Written by Georgica Bors -->
+		
+		<meta charset = "utf-8" />
+		<title>Contact</title>
+		<meta name="viewport" content="width = device-width, initial-scale=1">
+		<link rel = "stylesheet" href="./css/reset.css">
+		
+		<link rel = "stylesheet" href="./css/mobileStyles.css">
+		<link rel = "stylesheet" href="./css/mediumScreen.css" media="screen and (min-width:600px)">
+		<link rel = "stylesheet" href="./css/largeScreen.css" media="screen and (min-width:1000px)">
+		<meta name="author" content="Georgica Bors">
+		<meta name="description" content="Name of website for COM1008 Assignment"> <!-- Change later -->
+		<meta name="keywords" content="name of website, kids, games, puzzle">
+		
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				
+				<h1><img src = "./images/logo.png" alt="logo" width ="20%">Welcome to our website! </h1>
+			</header>
+			
+			<nav>
+				
+				
+				<ul>
+					
+					<li><a href="index.html" class="button">Home</a></li>
+					<li><a href="founders.html" class="button">Founders</a></li>
+					<li><a href="news.html" class="button">News</a></li>
+					<li><a href="recommendations.html" class="button">Recommendations</a></li>
+					<li><a href="games.html" class="button">Games</a></li>
+					<li><a href="contact.html" class="button">Contact</a></li>
+					<li><a href="accesibility.html" class="button">Accessibility</a></li>
+				</ul>
+			</nav>
+			
+			<main>
+			<section id="content">
+				<h1>Contact us</h1>
+				<form name="contactform" action="http://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.pl" method="get">
+					<input type="hidden" name="recipient" value="gbors1@sheffield.ac.uk">
+					<p>
+						<label for="GET-name">Name:</label>
+						<input class="text" id="GET-name" type="text" name="myname" placeholder="type your name..." maxlength="40" size="57" required="required">
+						<br>
+					</p>
+					
+					<p>
+						<label for="myemail">Your e-mail:</label>
+						<input class="text"type="email" name="myemail" id="myemail"
+						placeholder="type your email..." maxlength="40" size="50"
+						required="required">
+					</p>
+					
+					<p>
+						<textarea class="text" name="message" rows="5" cols="50" placeholder="type your message here..."></textarea>
+						<br>
+						<input class="button" type="submit" name="submit" id="submit" value="Send It!">
+						<input class="button" type="reset">
+					</p>
+					
+					
+					<!-- contents of the form go here -->
+				</form>
+			</section>
+			
+			<aside id="extra">
+				<h1>Where to find us</h1>
+				
+				<div id="map" style="width:100%;height:300px"></div>
+				<script>
+					function myMap() {
+						var mapCanvas = document.getElementById("map");
+						var mapOptions = { center: new google.maps.LatLng(51.5, -0.2), zoom: 10}
+						var map = new google.maps.Map(mapCanvas, mapOptions);
+						map.setCenter(new google.maps.LatLng(53.381762, -1.481754));
+					}
+				</script>
+				<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+			</aside>
+			
+			</main>
+			
+			
+			<figure>
+				<!--<img src = "./images/tpot1.jpg" alt="a teapot" width="100">  <!-- Change later -->
+				<!--<figcaption> A teapot</figcaption>-->
+			</figure>
+			
+			
+			<footer>
+				<p>&copy; Georgica Bors, 2016</p>
+				<a href="#"><img src = "./images/arrow.png" alt="logo" width ="15%"></a> <!-- Add image -->
+			</footer>
+			
+			
+		</div>
+	</body>
+	
+</html>
